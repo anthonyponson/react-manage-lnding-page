@@ -5,8 +5,6 @@ import HeroImg from "../img/illustration-intro.svg"
 export default function Hero(){
     return(
         <>
-         
-
         <section id='hero'>
           {/* flex conatainer */}
           <div className='container flex flex-col-reverse iteams-center px-6 mx-auto mt-10 sapce-y-0 md:space-y-0 md:flex-row'>
