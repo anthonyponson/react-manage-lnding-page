@@ -2,25 +2,41 @@ import React, { useState, useEffect } from 'react'
 import Logo from '../img/logo.svg'
 import '../index.css'
 
+
 export default function Navbar() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
+  // const [isMobileMenuOpen, setIsMobileMenuOpen] = useState()
+
+  // const toggleMobileMenu = () => {
+  //   setIsMobileMenuOpen(!isMobileMenuOpen)
+  // }
+
+  // useEffect(() => {
+  //   const handleResize = () => {
+      
+  //     if (window.innerWidth >= 768) {
+  //       setIsMobileMenuOpen()
+  //     }
+  //   }
+  //   window.addEventListener('resize', handleResize)
+  //   return () => window.removeEventListener('resize', handleResize)
+  // }, [isMobileMenuOpen])
+
+
+  const [isMobileMenuOpen , setIsMobileMenuOpen] = useState()
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen)
   }
 
-  useEffect(() => {
+  useEffect( () =>{
     const handleResize = () => {
-      
-      if (window.innerWidth >= 768 && isMobileMenuOpen) {
-        setIsMobileMenuOpen(false)
+      if (window.innerWidth >= 768) {
+        setIsMobileMenuOpen()
       }
     }
 
-    
     window.addEventListener('resize', handleResize)
-
-    
     return () => window.removeEventListener('resize', handleResize)
   }, [isMobileMenuOpen])
 
@@ -75,20 +91,26 @@ export default function Navbar() {
           </div>
           {/* mobile menu */}
 
-          <div className='md:hidden'>
+          <div className='md:hidden '>
             <div
               id='menu-items'
               className={`absolute flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md ${
                 isMobileMenuOpen ? 'flex' : 'hidden'
               }`}
             >
-              <a href='index.js' onClick={toggleMobileMenu}>
+              <a className='hover:text-brightred' href='index.js' onClick={toggleMobileMenu}>
                 About
               </a>
-              <a href='index.js' onClick={toggleMobileMenu}>
+              <a className='hover:text-brightred' href='index.js' onClick={toggleMobileMenu}>
                 Pricing
               </a>
-              <a href='index.js' onClick={toggleMobileMenu}>
+              <a className='hover:text-brightred' href='index.js' onClick={toggleMobileMenu}>
+                Contact
+              </a>
+              <a onClick={toggleMobileMenu}
+                className=' text-white bg-brightred px-4 py-3 rounded-full text-base font-semibold'
+                href='index.js'
+              >
                 Contact
               </a>
             </div>
