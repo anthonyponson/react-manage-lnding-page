@@ -52,26 +52,26 @@ export default function Navbar() {
             <div className='hidden space-x-6 items-center md:flex'>
               <a
                 className='hover:text-brightred text-base font-bold'
-                href='index.js'
+                href='#features'
               >
                 About
               </a>
               <a
                 className='hover:text-brightred text-base font-semibold'
-                href='index.js'
+                href='#testimonials'
               >
-                Pricing
+                Testimonials
               </a>
               <a
                 className='hover:text-brightred text-base font-semibold'
-                href='index.js'
+                href='#footer'
               >
                 Contact
               </a>
             </div>
             {/* nav button */}
             <a
-              href='index.js'
+              href='*'
               className='text-sm font-semibold md:block py-2 px-6 text-white bg-brightred rounded-full baseline hidden'
             >
               Sign In{' '}

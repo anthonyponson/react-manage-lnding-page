@@ -1,9 +1,12 @@
 import React from "react"
 import FooterImg from '../img/logo-white.svg'
+import { UilInstagram } from '@iconscout/react-unicons'
+import { UilTwitterAlt } from '@iconscout/react-unicons'
+import { UilLinkedinAlt } from '@iconscout/react-unicons'
 
 export default function Footer() {
     return (
-        <footer id='footer' className='bg-varydarkblue'>
+        <footer id='footer' className='bg-varydarkblue space-y-10 py-10 mt-16'>
           <div className='container flex flex-col justify-between px-6 py-10 mx-auto md:flex-row'>
             {/* logo and social link container */}
             <div className='flex flex-col items-center justify-between space-y-6 md:flex-col md:space-y-6 md:items-start'>
@@ -13,20 +16,18 @@ export default function Footer() {
               {/* social links */}
               <div className='flex justify-center space-x-4'>
                 {/* link 1 */}
-                <a href>
-                  <img src='img/icon-facebook.svg' alt='' />
-                </a>
+                
                 {/* link 2 */}
                 <a href>
-                  <img src='img/icon-youtube.svg' alt='' />
+                <UilInstagram size = "25" color ="#fff" />
                 </a>
                 {/* link 3 */}
                 <a href>
-                  <img src='img/icon-instagram.svg' alt='' />
+                <UilTwitterAlt size= "25"  color ="#fff" />
                 </a>
                 {/* link 4 */}
                 <a href>
-                  <img src='img/icon-pinterest.svg' alt='' />
+                  <UilLinkedinAlt size= "25"  color ="#fff" />
                 </a>
               </div>
             </div>

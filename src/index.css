@@ -9,24 +9,22 @@
   box-sizing: inherit;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
-*{
+
+* {
   transition: 0.3s all ease-in-out;
 }
 
-html{
+html {
   font-size: 100%;
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: 'Josefin Sans', sans-serif;
- 
 }
 
-
-.hamburger{
+.hamburger {
   cursor: pointer;
   width: 24px;
   height: 24px;
@@ -36,7 +34,7 @@ body{
 
 .hamburger-top,
 .hamburger-middle,
-.hamburger-bottom{
+.hamburger-bottom {
   position: absolute;
   top: 0;
   left: 0;
@@ -47,27 +45,27 @@ body{
   transition: all 0.5s;
 }
 
-.hamburger-middle{
+.hamburger-middle {
   transform: translateY(7px);
 }
 
-.hamburger-bottom{
+.hamburger-bottom {
   transform: translateY(14px);
 }
 
-.open{
+.open {
   transform: rotate(90deg);
   transform: translateY(0px);
 }
 
-.open .hamburger-top{
+.open .hamburger-top {
   transform: rotate(45deg) translateY(6px) translate(6px);
 }
 
-.open .hamburger-middle{
+.open .hamburger-middle {
   display: none;
 }
 
-.open .hamburger-bottom{
+.open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }

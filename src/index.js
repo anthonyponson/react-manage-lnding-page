@@ -7,6 +7,7 @@ import Hero from './Hero/Hero'
 import Features  from './Features/Features'
 import Testmonial from './Testmonial/Testmonial'
 import Footer from './Footer/Footer'
+
 // import logo from './img/logo.svg'
 
 ReactDOM.render(
