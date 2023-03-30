@@ -3,6 +3,7 @@ import FooterImg from '../img/logo-white.svg'
 import { UilInstagram } from '@iconscout/react-unicons'
 import { UilTwitterAlt } from '@iconscout/react-unicons'
 import { UilLinkedinAlt } from '@iconscout/react-unicons'
+import '../index.css'
 
 export default function Footer() {
     return (
@@ -19,15 +20,15 @@ export default function Footer() {
                 
                 {/* link 2 */}
                 <a href>
-                <UilInstagram size = "25" color ="#fff" />
+                <UilInstagram size = "25" color ="#fff" className='instagram'/>
                 </a>
                 {/* link 3 */}
                 <a href>
-                <UilTwitterAlt size= "25"  color ="#fff" />
+                <UilTwitterAlt size= "25"  color ="#fff" className='twitter' />
                 </a>
                 {/* link 4 */}
                 <a href>
-                  <UilLinkedinAlt size= "25"  color ="#fff" />
+                  <UilLinkedinAlt size= "25"  color ="#fff" className='link' />
                 </a>
               </div>
             </div>

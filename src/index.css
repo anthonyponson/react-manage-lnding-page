@@ -69,3 +69,14 @@ body {
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
+
+
+.instagram:hover path{
+  fill: hsl(12,88%,59%);
+}
+.twitter:hover path{
+  fill: hsl(12,88%,59%);
+}
+.link:hover path{
+  fill: hsl(12,88%,59%);
+}

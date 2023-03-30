@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "homepage": "http://anthonyponson.github.io/react-manage-landing-page",
   "private": true,
+  "main": "src/main.js",
   "dependencies": {
     "@iconscout/react-unicons": "^2.0.0",
     "@testing-library/jest-dom": "^5.16.5",
